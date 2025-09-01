@@ -81,3 +81,16 @@ We will get a good amount of practice.
 This project is licensed under the MIT License as an example project. 
 You are encouraged to fork, copy, explore, and modify the code as you like. 
 See the [LICENSE](LICENSE.txt) file for more.
+
+## Task 5. Create custom producer file
+
+Create a new file named basic_producer_pinkston.py. Copy and paste contents of basic_producer_case.py into basic_producer_pinkston.py as a starting basis.
+
+## Task 6. Add, commit, and push after creating custom producer file
+
+```shell
+.venv\Scripts\activate
+git add.
+git commit -m "created custom producers file"
+git push -u origin main
+```
