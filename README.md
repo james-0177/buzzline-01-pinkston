@@ -94,3 +94,23 @@ git add.
 git commit -m "created custom producers file"
 git push -u origin main
 ```
+
+## Task 7. Modify custom producer file
+
+Update custom producer file basic_producer_pinkston.py with custom messages.
+
+```shell
+# Define some lists for generating buzz messages
+ADJECTIVES: list = ["interesting", "silly", "awkward", "inspiring", "strange", "awful", "delightful", "wonderful"]
+ACTIONS: list = ["watched", "read", "learned", "won", "played", "heard", "chose", "lost"]
+TOPICS: list = ["a game", "a joke", "a song", "a book", "a picture", "a secret", "a recipe", "a dream"]
+```
+
+## Task 8. Add, commit, and push updated custom producer file
+
+```shell
+.venv\Scripts\activate
+git add.
+git commit -m "modified custom producer file"
+git push -u origin main
+```
