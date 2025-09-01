@@ -114,3 +114,16 @@ git add.
 git commit -m "modified custom producer file"
 git push -u origin main
 ```
+
+## Task 9. Create custom consumer file
+
+Create a new file named basic_consumer_pinkston.py. Copy and paste contents of basic_consumer_case.py into basic_consumer_pinkston.py as a starting basis.
+
+## Task 10. Add, commit, and push after creating custom consumer file
+
+```shell
+.venv\Scripts\activate
+git add.
+git commit -m "created custom consumers file"
+git push -u origin main
+```
