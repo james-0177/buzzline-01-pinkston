@@ -137,6 +137,33 @@ Update custom consumer file basic_consumer_pinkston.py with custom analytics to 
 ```shell
 .venv\Scripts\activate
 git add.
-git commit -m "modified custom producer file"
+git commit -m "modified custom consumers file"
+git push -u origin main
+```
+
+## Task 13. Generate new Streaming Data (Terminal 1)
+
+Open a terminal.
+
+```shell
+.venv\Scripts\activate
+py -m producers.basic_producer_pinkston
+```
+
+## Task 14. Monitor an Active Log File with new Streaming Data (Terminal 2)
+
+Open a NEW terminal in your root project folder. 
+
+```shell
+.venv\Scripts\activate
+py -m consumers.basic_consumer_pinkston
+```
+
+## Task 15. Add, commit, and push final updates to README
+
+```shell
+.venv\Scripts\activate
+git add.
+git commit -m "updated README"
 git push -u origin main
 ```
