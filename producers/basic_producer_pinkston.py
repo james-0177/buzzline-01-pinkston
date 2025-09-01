@@ -1,5 +1,5 @@
 """
-basic_generator_case.py
+basic_producer_pinkston.py
 
 Generate some streaming buzz messages. 
 """

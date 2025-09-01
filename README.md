@@ -127,3 +127,16 @@ git add.
 git commit -m "created custom consumers file"
 git push -u origin main
 ```
+
+## Task 11. Modify custom consumer file
+
+Update custom consumer file basic_consumer_pinkston.py with custom analytics to include basic message counter to include total messages, and messages in the last 30 seconds.
+
+## Task 12. Add, commit, and push updated custom consumer file
+
+```shell
+.venv\Scripts\activate
+git add.
+git commit -m "modified custom producer file"
+git push -u origin main
+```

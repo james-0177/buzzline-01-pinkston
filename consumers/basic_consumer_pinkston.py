@@ -1,5 +1,5 @@
 """
-basic_consumer_case.py
+basic_consumer_pinkston.py
 
 Read a log file as it is being written. 
 """
@@ -32,6 +32,12 @@ def process_message(log_file) -> None:
         file.seek(0, os.SEEK_END)
         print("Consumer is ready and waiting for a new log message...")
 
+        # Analytics
+        total_messages = 0
+        window_messages = 0
+        window_start = time.time()
+        window_size = 30
+
         # Use while True loop so the consumer keeps running forever
         while True:
 
@@ -49,13 +55,26 @@ def process_message(log_file) -> None:
             # We got a new log entry!
             # Remove any leading/trailing white space and log the message
             message = line.strip()
+            total_messages += 1
+            window_messages += 1
             print(f"Consumed log message: {message}")
 
             # monitor and alert on special conditions
-            if "I just loved a movie! It was funny." in message:
+            if "I just played a dream! It was awkward." in message:
                 print(f"ALERT: The special message was found! \n{message}")
                 logger.warning(f"ALERT: The special message was found! \n{message}")
 
+            # Analytics Report
+            elapsed = time.time() - window_start
+            if elapsed >= window_size:
+                print("\n=== Analytics ===")
+                print(f" Total messages so far: {total_messages}")
+                print(f" Messages in last {window_size} sec: {window_messages}")
+                print("=================\n")
+
+                # reset for next window
+                window_messages = 0
+                window_start = time.time()
 
 #####################################
 # Define main function for this script.
